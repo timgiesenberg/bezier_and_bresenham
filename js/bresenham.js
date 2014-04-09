@@ -58,4 +58,5 @@ function drawBresenham(){
     }
     /**/
 	ctx.closePath();
+        
 }

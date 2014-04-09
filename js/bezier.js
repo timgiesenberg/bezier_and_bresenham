@@ -86,7 +86,7 @@ function drawPoint(P, Name){
 	var y = P.y;
 
 	ctx.beginPath();
-	ctx.fillStyle="green";
+	ctx.fillStyle = "green";
 	ctx.arc(P.x,P.y ,10,0*Math.PI,2*Math.PI);
 	ctx.fill();
 	//ctx.stroke();

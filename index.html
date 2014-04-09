@@ -16,7 +16,8 @@
   <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
   <link rel="shortcut icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="css/foundation.min.css"/>
 
 </head>
 
@@ -26,17 +27,14 @@
       <h1>Bresenham und Bezier</h1>
       
     </header>
-    <nav>
-      <p><a href="/">Home</a></p>
-    </nav>
 
     <div id="formcontainer">
-    	<div id="buttoncontainer">
-	    	<button id="clear"      onmouseover="" onclick="clearCanvas()"> Leinwand bereinigen </button><br />
-	    	<button id="bresenham" 	onmouseover="" onclick="drawBresenham()">Bresenham Linie</button></td><br />
-        	<button id="bezier" 	onmouseover="" onclick="drawBezier()">Bezier Kurve</button></td><br />
-        	<button id="bezier" 	onmouseover="" onclick="connectLines()">Stützlinien der BezierKurve</button><br />
-    	</div>
+    	<ul class="button-group">
+            <li><a class="button tiny" id="clear"      href="#" onmouseover="" onclick="clearCanvas()"> Leinwand bereinigen </a><br /></li>
+            <li><a class="button tiny" id="bresenham"  href="#"	onmouseover="" onclick="drawBresenham()">Bresenham Linie</a><br /></li>
+            <li><a class="button tiny" id="bezier"     href="#"	onmouseover="" onclick="drawBezier()">Bezier Kurve</a><br /></li>
+            <li><a class="button tiny" id="bezier"     href="#"	onmouseover="" onclick="connectLines()">Stützlinien der BezierKurve</a><br /></li>
+    	</ul>
         <div id="tablecontainer">
         <table>
         	<tr>
@@ -75,6 +73,9 @@
     <div id="leinwand">
         <canvas id="myCanvas" height="600" width="790"></canvas>
     </div>
+      <div id="container">
+          
+      </div>
     <footer>
      <p>&copy; Copyright  by TimGiesenberg</p>
     </footer>
@@ -84,11 +85,14 @@
        	var c = document.getElementById("myCanvas");
         var ctx = c.getContext("2d");
         function clearCanvas(){
-            ctx.
+            ctx.fillStyle = "white";
+            ctx.fillRect(0, 0, 790, 600);
         }
     </script>
+    <script type="text/javascript" src="js/kinetic_5.1.0.js"></script>
     <script type="text/javascript" src="js/bezier.js"></script>
     <script type="text/javascript" src="js/bresenham.js"></script>
+    <script type="text/javascript" src="js/kinetic.test.js"></script>
  </body>
 </html>
 

@@ -1,30 +1,6 @@
 body {
 background-color: #dedede;
 }
-h1{
-	font-family: Helvetica;
-	text-align: center;
-	line-height: 75px;
-	color: white;
-	height: 80px;
-	width:800px;
-	margin:auto;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-background-image: linear-gradient(bottom, #6B6B6B 11%, #D1D1D1 90%);
-background-image: -o-linear-gradient(bottom, #6B6B6B 11%, #D1D1D1 90%);
-background-image: -moz-linear-gradient(bottom, #6B6B6B 11%, #D1D1D1 90%);
-background-image: -webkit-linear-gradient(bottom, #6B6B6B 11%, #D1D1D1 90%);
-background-image: -ms-linear-gradient(bottom, #6B6B6B 11%, #D1D1D1 90%);
-
-background-image: -webkit-gradient(
-	linear,
-	left bottom,
-	left top,
-	color-stop(0.11, #6B6B6B),
-	color-stop(0.9, #D1D1D1)
-);
-}
 nav p{
 	padding-top: 0px;
 	width:800px;
@@ -38,6 +14,7 @@ nav p{
 	-webkit-border-radius: 10px;
 	background-image: -webkit-linear-gradient(#0a0a0a 0%, #ffffff 100%);*/
 }
+/*
 #formcontainer{
 	width:800px;
 	height: 140px;
@@ -47,34 +24,13 @@ nav p{
 	-webkit-border-radius: 10px;
 
 
-}
+}*/
 canvas{
 	background-color: #fff;
 	border: 5px solid #999;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
+	/*-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;*/
 	margin:auto;
-}
-button{
-	color: #ffffff;
-	width: 280px;
-	height: 30px;
-	-webkit-border-radius: 10px;
-	font-family: Helvetica;
-	font-size: 14pt;
-background-image: linear-gradient(bottom, #6B6B6B 11%, #D1D1D1 90%);
-background-image: -o-linear-gradient(bottom, #6B6B6B 11%, #D1D1D1 90%);
-background-image: -moz-linear-gradient(bottom, #6B6B6B 11%, #D1D1D1 90%);
-background-image: -webkit-linear-gradient(bottom, #6B6B6B 11%, #D1D1D1 90%);
-background-image: -ms-linear-gradient(bottom, #6B6B6B 11%, #D1D1D1 90%);
-
-background-image: -webkit-gradient(
-	linear,
-	left bottom,
-	left top,
-	color-stop(0.11, #6B6B6B),
-	color-stop(0.9, #D1D1D1)
-);
 }
 #leinwand{
 	height: 601px;
@@ -82,11 +38,11 @@ background-image: -webkit-gradient(
 	margin:auto;
 	margin-top: 5px;
 }
-table{
+/*table{
 	width: 500px;
 	margin:auto;
 	font-family: Helvetica;
-}
+}*/
 footer p{
 	width:800px;
 	padding-left: 25px;
@@ -97,13 +53,13 @@ tr{
 	background-color: #bdbdbd;
 	text-align: center;
 }
-#tablecontainer{
+/*#tablecontainer{
 	float: right;
 	padding-right: 5px;
 	padding-top: 5px;
-}
-#buttoncontainer{
+}*/
+/*#buttoncontainer{
 	float: left;
 	padding-left: 5px;
 	padding-top: 5px;
-}
+}/**/
